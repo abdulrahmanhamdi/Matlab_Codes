@@ -13,3 +13,13 @@ disp(diag(D));
 
 disp('Eigenvectors (columns of V):');
 disp(V);
+% Visualization
+figure;
+quiver(0, 0, V(1,1), V(2,1), 'r', 'LineWidth', 2); hold on;
+quiver(0, 0, V(1,2), V(2,2), 'b', 'LineWidth', 2);
+axis equal;
+grid on;
+title('Eigenvectors of Matrix A');
+legend('v_1', 'v_2');
+xlabel('x');
+ylabel('y');
